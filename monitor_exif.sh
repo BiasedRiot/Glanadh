@@ -8,11 +8,13 @@ eval set -- "$TEMP"
 
 my_directory=/nextcloud-data/Coogy/files
 
-while:
-do:
+while :
+do
 sleep 10
 
 while inotifywait -r -e create $my_directory; do
+  # Sleep for 10 seconds in case there are a few files being uploaded
+  sleep 10
   /usr/bin/remove_bulk_data.sh -d $my_directory 
 done
 TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
