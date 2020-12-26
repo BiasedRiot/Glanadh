@@ -9,14 +9,14 @@ Simple scripts using EXIF tools to automatically scrub pictures/files of any EXI
 This repo contains two shell scripts (one for removing all EXIF data and one for monitoring) and a SystemD service file that runs the monitoring shell script. First thing you'll need to do is clone the Repo.
 
 ```
-git clone <Clone URL>
+git clone https://github.com/CoogyEoin/Glanfile.git
 ```
 
 Next thing is you'll need to copy the shell scripts into your **/usr/local/bin/** directory so they can be ran and the glanfile.service file into your **/etc/systemd/system** file so SystemD can run it.
 
 ```
-cp monitoring_exif.sh /usr/local/bin/
-cp remove_bulk_exif.sh /usr/local/bin/
+cp monitor_exif.sh /usr/local/bin/
+cp remove_bulk_data.sh /usr/local/bin/
 cp glanfile.service /etc/systemd/system/
 ```
 
@@ -31,7 +31,7 @@ systemctl start glanfile
 If all goes well then every time you add a new file the EXIF data will be removed. To remove all the data initially you can run the below command.
 
 ```
-/usr/local/bin/remove_bulk_exif.sh -d <Whatever your directory is>
+/usr/local/bin/remove_bulk_data.sh -d <Whatever your directory is>
 ```
 
 Stay happy and stay private.
