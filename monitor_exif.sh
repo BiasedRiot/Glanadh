@@ -15,7 +15,7 @@ sleep 10
 while inotifywait -r -e create $my_directory; do
   # Sleep for 10 seconds in case there are a few files being uploaded
   sleep 10
-  /usr/bin/remove_bulk_data.sh -d $my_directory 
+  /usr/local/bin/remove_bulk_data.sh -d $my_directory 
 done
 TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 echo "glanfile.service finished at $TIMESTAMP"
