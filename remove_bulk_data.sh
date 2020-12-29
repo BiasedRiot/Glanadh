@@ -15,4 +15,4 @@ while true ; do
     esac
 done
 
-find $my_directory -type f | xargs exiftool -overwrite_original -all=  
+mat2 --unknown-members omit --inplace $my_directory

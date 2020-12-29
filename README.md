@@ -1,14 +1,14 @@
 # Glanfile
 
-Simple scripts using EXIF tools to automatically scrub pictures/files of any EXIF data. Good for running on a cloud server where you don't want to worry about removing EXIF from files off all your devices.
+Simple scripts using mat2 to automatically scrub pictures/files of any meta data. Good for running on a cloud server where you don't want to worry about removing EXIF from files off all your devices.
 
 ## Dependancies
-* exiftools
+* mat2
 * inotify-tools
 
 ## Setting up
 
-This repo contains two shell scripts (one for removing all EXIF data and one for monitoring) and a SystemD service file that runs the monitoring shell script. First thing you'll need to do is clone the Repo.
+This repo contains two shell scripts (one for removing all meta data and one for monitoring) and a SystemD service file that runs the monitoring shell script. First thing you'll need to do is clone the Repo.
 
 ```
 git clone https://github.com/CoogyEoin/Glanfile.git
