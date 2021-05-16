@@ -1,6 +1,6 @@
-# Glanfile
+# Glanadh
 
-Simple scripts using mat2 to automatically scrub pictures/files of any meta data. Good for running on a cloud server where you don't want to worry about removing EXIF from files off all your devices.
+Glanadh (cleaning in Irish) is a collection of simple scripts using mat2 to automatically scrub pictures/files of any meta data. Good for running on a cloud server where you don't want to worry about removing EXIF from files off all your devices.
 
 ## Dependancies
 * mat2
@@ -11,7 +11,7 @@ Simple scripts using mat2 to automatically scrub pictures/files of any meta data
 This repo contains two shell scripts (one for removing all meta data and one for monitoring) and a SystemD service file that runs the monitoring shell script. First thing you'll need to do is clone the Repo.
 
 ```
-git clone https://github.com/CoogyEoin/Glanfile.git
+git clone https://github.com/CoogyEoin/Glanadh.git
 ```
 
 Next thing is you'll need to copy the shell scripts into your **/usr/local/bin/** directory so they can be ran and the glanfile.service file into your **/etc/systemd/system** file so SystemD can run it.
