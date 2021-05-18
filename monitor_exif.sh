@@ -18,5 +18,5 @@ while inotifywait -r -e create $my_directory; do
   /usr/local/bin/remove_bulk_data.sh -d $my_directory 
 done
 TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
-echo "glanfile.service finished at $TIMESTAMP"
+echo "glanadh.service finished at $TIMESTAMP"
 done

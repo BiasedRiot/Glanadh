@@ -19,15 +19,15 @@ Next thing is you'll need to copy the shell scripts into your **/usr/local/bin/*
 ```
 cp monitor_exif.sh /usr/local/bin/
 cp remove_bulk_data.sh /usr/local/bin/
-cp glanfile.service /etc/systemd/system/
+cp glanadh.service /etc/systemd/system/
 ```
 
 Edit your monitoring_exif.sh script and **put the directory you want to monitor as the my_directory variable**. It won't work otherwise. Then just enable and start the service and you should be good to go.
 
 ```
 systemctl daemon-reload
-systemctl enable glanfile
-systemctl start glanfile
+systemctl enable glanadh
+systemctl start glanadh
 ```
 
 If all goes well then every time you add a new file the EXIF data will be removed. To remove all the data initially you can run the below command.
